@@ -1,0 +1,6 @@
+stats for file "file1.txt": 
+lines: 3
+words: 2
+shortest word: 2
+longest word: 5
+average length: 3.750000
