@@ -60,7 +60,7 @@ float harmonic(int amountOfArgs, ...) {
 
 int main() {
 
-    cout << "sum: " << sumofArgs(4, 2, 1, 3, 5) << "\n";
+    cout << "sum: " << sumOfArgs(4, 2, 1, 3, 5) << "\n";
     cout << "average: " << average(4, 2, 1, 3, 5) << "\n";
     cout << "gometric mean: " << geometric(4, 2, 1, 7, 5) << "\n";
     cout << "harmonic mean: " << harmonic(4, 2, 1, 3, 5) << "\n";
