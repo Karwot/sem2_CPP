@@ -60,9 +60,9 @@ string wordStats(string fileName) {
     while(inputFile) {
         inputFile.get(ch);
         ch = tolower(ch);
-        if(ch<97 || ch>122 ) {
-        //if(ch==32 || ch=='\n') {
-            cout << "word length: " << tempWordLength << endl;  
+        //if(ch<97 || ch>122 ) {
+        if(ch==32 || ch=='\n') {
+            cout << endl << "word length: " << tempWordLength;  
             if(longestWordLength == -1 || tempWordLength > longestWordLength)
                 longestWordLength = tempWordLength;
             if(shortestWordLength == -1 || tempWordLength < shortestWordLength)
@@ -75,7 +75,7 @@ string wordStats(string fileName) {
             tempWordLength++;  
     }
     inputFile.close();
-    cout << "amount of words: " << amount << endl;
+    cout << endl <<  "amount of words: " << amount << endl;
     cout << "shortest word: " << shortestWordLength << " letters" << endl;
     cout << "longest word " << longestWordLength << " letters" << endl;
     cout << "average length " << (1.0*sum)/amount << " letters";
@@ -105,6 +105,5 @@ int main() {
 
     outputStats(fileName, "stats.txt");
 
-    getchar();
     return 0;
 }

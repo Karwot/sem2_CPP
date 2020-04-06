@@ -1,3 +1,4 @@
-hejka co tam
-tutaj
-xd
+This is a slightly more advanced topic than what I have covered so far, but I think that it is useful. File I/O is reading from and writing to files. This lesson will only cover text files, that is, files that are composed only of ASCII text.
+C++ has two basic classes to handle files, ifstream and ofstream. To use them, include the header file fstream. Ifstream handles file input (reading from files), and ofstream handles file output (writing to files). The way to declare an instance of the ifstream or ofstream class is:
+The constructor for both classes will actually open the file if you pass the name as an argument. As well, both classes have an open command (a_file.open()) and a close command (a_file.close()). You aren't required to use the close command as it will automatically be called when the program terminates, but if you need to close the file long before the program ends, it is useful.
+The beauty of the C++ method of handling files rests in the simplicity of the actual functions used in basic input and output operations. Because C++ supports overloading operators, it is possible to use << and >> in front of the instance of the class as if it were cout or cin. In fact, file streams can be used exactly the same as cout and cin after they are opened.

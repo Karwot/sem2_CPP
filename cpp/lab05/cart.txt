@@ -1,0 +1,5 @@
+kanapka: 2.50
+szarlotka: 1.50
+woda mineralna: 1.50
+coca cola: 3.5
+coca cola: 3.5
