@@ -18,7 +18,8 @@ void reversi(Element** start) {
     while(*start) {
         Element* temp = *start;
         *start = (*start)->next;
-        cout << temp->value << " ";
+        if(temp->value!="end")
+            cout << temp->value << " ";
         delete temp;
     }
     cout << endl;
