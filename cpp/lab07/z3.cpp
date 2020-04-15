@@ -3,6 +3,7 @@
 using namespace std;
 
 class Data {
+    private:
     unsigned int day;
     unsigned int month;
     unsigned int year;
@@ -90,10 +91,22 @@ class Faktura {
 };
 
 int main() {
+    //zadanie 2
+    Data d;
+    d.initDate(17, 3, 2012);
+    d.setDay(15);
+    d.setMonth(4);
+    d.setYear(2020);
 
+    cout << "\nWypisanie daty przy pomocy: " << endl;
+    cout << "Funkcji typu get: \n" <<  d.getDay() << "." << d.getMonth() << "." << d.getYear() << endl;
+    cout << "Funkcji toString: \n" << d.toString() << endl;
+    cout << "Funkcji toXML: \n" << d.toXML();
+
+    //zadanie 3 
     Faktura f1;
     f1.init("zlecenie1", "3", 15, 4, 2020);
-    cout << f1.toString() << endl;
-    cout << f1.toXML();
+    cout << "Faktura w postaci tekstowej:\n" << f1.toString() << endl;
+    cout << "\nFaktura w postaci XML:\n" << f1.toXML();
     return 0;
 }
