@@ -3,10 +3,10 @@
 using namespace std;
 
 class Name {
-public:
+//private:
     string imie;
     string nazwisko;
-
+public:
     Name() {} 
     Name(string _imie, string _nazwisko) : imie(_imie), nazwisko(_nazwisko) {}
 
@@ -77,7 +77,6 @@ int main() {
         cout << n1.initials();
     else
         cout << n2.initials();
-    cout << endl << n2;
 
     return 0;
 }

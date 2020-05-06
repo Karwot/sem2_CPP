@@ -2,11 +2,11 @@
 using namespace std;
 
 class Date {
-    public:
+    //private:
     int day;
     int month;
     int year;
-
+    public: 
     Date() : day(0), month(0), year(0) {}
     Date(int _day, int _month, int _year) : day(_day), month(_month), year(_year) {}
 
